@@ -8,3 +8,9 @@ Suite Teardown                End suite
 
 
 *** Test Case ***
+ [tags]                    Accounts
+    Appstate                  Home
+    ${user}=                  Set Variable                         Demandbase Integration
+    Login As                  ${user}
+    RefreshPage
+    ClickText                 OK
